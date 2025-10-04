@@ -11,3 +11,4 @@ echo "enter value for y:"
 read y
 sum=$((x + y))
 echo $sum
+
