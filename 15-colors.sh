@@ -16,7 +16,7 @@ if [ $USERID -ne 0 ]; then
     exit 1 # filure is other than 0 to exit
 fi
 
-VALIDATE(){
+VALIDATE(){ # Functions receive inputs through args just like shell script args
     if [ $1 -ne 0 ]; then  #previous command exit status if 0 success otherwise failed
         echo -e "Installing  $2 ..... $R FAILURE $N"
         exit 1
